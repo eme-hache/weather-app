@@ -8,7 +8,7 @@ const Main = () => {
 
     return (
         <>
-            <main className="dos-columnas">
+            <main className='content'>
                 <Form />
 
                 <div className="contenedor clima">

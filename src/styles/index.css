@@ -18,13 +18,13 @@ header h1 {
   margin: 0;
 }
 
-.dos-columnas {
+.content {
   display: grid;
   gap: 4rem;
 }
 
 @media (min-width: 993px) {
-  .dos-columnas {
+  .content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
