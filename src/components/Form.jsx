@@ -19,7 +19,7 @@ const Form = () => {
     }
 
     return (
-        <div className="contenedor">
+        <div className="container">
             <form onSubmit={handleSubmit}>
                 {alert && <p>{alert}</p>}
 

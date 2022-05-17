@@ -24,7 +24,6 @@ const WeatherProvider = ({ children }) => {
             
             const appId = import.meta.env.VITE_API_KEY
             const urlCoordinates = `https://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&appid=${appId}&limit=1`
-            console.log(urlCoordinates)
             
             const { data: coordinates } = await axios.get(urlCoordinates)
             const { lat, lon } = coordinates[0]

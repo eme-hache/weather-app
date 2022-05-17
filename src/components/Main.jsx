@@ -11,7 +11,7 @@ const Main = () => {
             <main className='content'>
                 <Form />
 
-                <div className="contenedor clima">
+                <div className="container clima">
                     {loading
                         ? <Spinner />
                         : Object.keys(result).length > 0 ? <Result />
