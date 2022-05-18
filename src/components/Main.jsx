@@ -1,3 +1,4 @@
+import weatherImg from '../assets/weather-animated.gif'
 import useWeather from '../hooks/useWeather'
 import Spinner from './Spinner'
 import Result from './Result'
@@ -17,7 +18,11 @@ const Main = () => {
                         : Object.keys(result).length > 0 ? <Result />
                             : alert
                                 ? <p>{alert}</p>
-                                : <span>Ingresa una ciudad y un país para comenzar :)</span>}
+                                : <img
+                                    className='weather-img'
+                                    src={weatherImg}
+                                    alt='weather'
+                                />}
                 </div>
             </main>
         </>
