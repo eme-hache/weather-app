@@ -263,5 +263,5 @@ input[type="submit"]:hover {
 }
 
 .weather-img {
-  width: 100%;
+  object-fit: contain;
 }

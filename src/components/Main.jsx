@@ -22,6 +22,8 @@ const Main = () => {
                                     className='weather-img'
                                     src={weatherImg}
                                     alt='weather'
+                                    height={200}
+                                    width={300}
                                 />}
                 </div>
             </main>
