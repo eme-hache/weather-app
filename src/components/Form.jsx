@@ -31,6 +31,7 @@ const Form = () => {
                         name="city"
                         value={city}
                         onChange={handleData}
+                        placeholder="Ej: Madrid"
                     />
                 </div>
 

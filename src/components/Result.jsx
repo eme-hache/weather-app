@@ -7,11 +7,13 @@ const Result = () => {
 
     return (
         <>
-            <h2>El clima de {name} es:</h2>
+            <div className='title'>
+                <h2>El clima de {name} es:</h2>
 
-            <p>
-                {parseInt(main.temp - kelvin)} <span>&#x2103;</span>
-            </p>
+                <p>
+                    {parseInt(main.temp - kelvin)} <span>&#x2103;</span>
+                </p>
+            </div>
 
             <div className="temp_min_max">
                 <p>

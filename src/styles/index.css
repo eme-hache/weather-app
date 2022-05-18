@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Hubballi', cursive;
   background-color: #f1f5f9;
@@ -31,19 +37,19 @@ header h1 {
 
 @media (max-width:992px) {
   .content {
-    padding: 0 3rem;
+    padding: 0 30px;
   }
 }
 
 main {
-  margin: 4rem auto;
+  margin: 40px auto;
   max-width: 900px;
 }
 
 .container {
   border-radius: .5rem;
   background-color: white;
-  padding: 4rem;
+  padding: 40px;
   -webkit-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
   -moz-box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
   box-shadow: 0px 10px 33px -17px rgba(173, 173, 173, 1);
@@ -76,9 +82,14 @@ form {
 .campo input,
 .campo select {
   all: unset;
+  writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  box-sizing: border-box;
   border: 1px solid #cbd5e1;
   border-radius: .3rem;
-  padding: .5rem;
+  width: 100%;
+  padding: .5rem 10px;
 }
 
 input[type="submit"] {
@@ -92,7 +103,6 @@ input[type="submit"] {
   border-radius: .2rem;
   font-size: 1rem;
   border: none;
-  width: 100%;
   cursor: pointer;
   transition: background-color .3s ease;
 }
@@ -117,7 +127,7 @@ input[type="submit"]:hover {
 
 .clima {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-flow: column;
 }
@@ -126,7 +136,7 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-.clima>p:first-of-type {
+.clima .title p {
   font-size: 3rem;
   margin: 0;
   font-family: 'Inter', sans-serif;
